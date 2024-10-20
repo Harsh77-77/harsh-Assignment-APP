@@ -33,7 +33,7 @@ const Screen1 = () => {
       <br />
       <First />
 
-      <div className="font-bold absolute bottom-[180px] right-[150px] text-[20px] text-center z-10">
+      <div className="font-bold fixed bottom-[180px] right-[150px] text-[20px] text-center z-[1]">
         <h1 className=" text-nowrap items-end">
           पूजा पाठ हो या अनुष्ठान,
           <br />
@@ -41,12 +41,12 @@ const Screen1 = () => {
         </h1>
       </div>
 
-      <div className="flex ">
-        <div className="right-0 bottom-0 absolute z-10">
+      <div className=" ">
+        <div className="right-0 bottom-0 fixed z-[1]">
           <img
             src={panditji}
             alt="New Image"
-            className="h-auto w-full sm:h-[200px] md:h-[300px] lg:h-[400px]"
+            className="h-auto w-auto "
           />
         </div>
         <div className="right-0 bottom-0 absolute">
