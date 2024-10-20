@@ -98,7 +98,7 @@ export default function Services() {
       </div>
 
       {/* Service Cards */}
-      <div className="mt-8 space-y-4 mb-20">
+      <div className="mt-8 space-y-4 relative z-[1] mb-20">
         {filteredServices.map((service) => (
           <div
             key={service.id}
@@ -142,7 +142,7 @@ export default function Services() {
 
       {/* Add to My Services Button */}
 
-      <div className="fixed bottom-1 left-4 right-4 flex justify-center items-center">
+      <div className="fixed bottom-1 z-10 left-4 right-4 flex justify-center items-center">
         <div
           className="relative bottom-20 bg-red-500 rounded-full px-4 py-1 w-full max-w-xs flex justify-center items-center"
           style={{ backgroundColor: "#ff0000" }} // Ensure the button background is not transparent

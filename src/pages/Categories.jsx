@@ -78,15 +78,15 @@ export default function Categories() {
         {categories.map(category => (
           <div
             key={category.id}
-            className={` rounded-lg overflow-hidden shadow-md transition-all duration-300 ease-in-out 
+            className={` rounded-lg bg-white relative z-[1]  overflow-hidden shadow-md transition-all duration-300 ease-in-out 
               ${selectedCategories.includes(category.id) ? 'border-2 border-red-500' : 'border border-gray-200'}`}
             onClick={() => toggleCategory(category.id)}
           >
-            <div className="flex p-4">
+            <div className="flex  p-4">
               <img
                 src={category.imageUrl}
                 alt={category.title}
-                className="w-[98.5px] h-[83px] object-cover rounded-md"
+                className="w-[98.5px] h-[83px]  object-cover rounded-md"
               />
               <div className='mx-[20px] '>
               <div className="ml-4 flex-1">
@@ -101,7 +101,7 @@ export default function Categories() {
       
       <button
         onClick={handleNext}
-        className="fixed bottom-20 left-4 right-4 bg-red-500 text-white py-3 rounded-lg font-semibold"
+        className="fixed bottom-20 left-4 right-4 z-10 bg-red-500 text-white py-3 rounded-lg font-semibold"
       >
         Next
       </button>

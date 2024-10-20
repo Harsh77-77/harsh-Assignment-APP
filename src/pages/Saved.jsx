@@ -89,7 +89,7 @@ export default function Saved() {
       </div>
 
       {/* Service Cards */}
-      <div className="mt-16 space-y-4 mb-20">
+      <div className="mt-16 relative z-[1] space-y-4 mb-20">
         {selectedServicesData.length > 0 ? (
           selectedServicesData.map((service) => (
             <div
@@ -129,7 +129,7 @@ export default function Saved() {
         )}
       </div>
 
-      <div className="fixed bottom-1 left-4 right-4 flex justify-center items-center">
+      <div className="fixed bottom-1 z-10 left-4 right-4 flex justify-center items-center">
         <div
           className="relative bottom-20 bg-red-500 rounded-full px-4 py-1 w-full max-w-xs flex justify-center items-center"
           style={{ backgroundColor: "#ff0000" }} // Ensure the button background is not transparent
