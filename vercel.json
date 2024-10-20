@@ -1,0 +1,11 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/index.html" },
+      { "source": "/screen2", "destination": "/index.html" },
+      { "source": "/categories", "destination": "/index.html" },
+      { "source": "/services", "destination": "/index.html" },
+      { "source": "/saved", "destination": "/index.html" },
+      { "source": "/logout", "destination": "/index.html" }
+    ]
+  }
+  
