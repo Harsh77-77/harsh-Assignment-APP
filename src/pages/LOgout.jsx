@@ -39,7 +39,7 @@ const Logout = () => {
       <div className='absolute z-10 flex flex-col items-center justify-center space-y-5'>
         <h1 className='text-[#313642] text-[20px] font-semibold text-center'>Are you sure you want to log out?</h1>
         <div className='text-white space-x-10'>
-          <button   onClick={() => navigate("/screen2")} className='w-[122px] h-[40px] bg-[#E31A1A] rounded-lg'>Yes</button>
+          <button   className='w-[122px] h-[40px] bg-[#E31A1A] rounded-lg'>Yes</button>
           <button  onClick={() => navigate("/saved")} className='w-[122px] h-[40px] bg-[#313642] rounded-lg'>Cancel</button>
         </div>
       </div>
@@ -52,3 +52,4 @@ const Logout = () => {
 }
 
 export default Logout;
+// onClick={() => navigate("/screen2")}
